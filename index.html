@@ -313,8 +313,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h2 class="subtitle has-text-centered">
-          Overview of our RoomTour3D data generation. 
-Starting from a room tour video, we first apply BLIP-2 on frame sequence to predict the room locations. Next, we use RAM and Grounding-DINO to identify objects within the frames and employ Depth-Anything for depth prediction. Subsequently, COLMAP is used to reconstruct the 3D scene with complete geometry information, and we sample human walking trajectories from the continuous frames, \eg, \textbf{\textcolor{SpringGreen}{\textcircled{1}}} and \textbf{\textcolor{Bittersweet}{\textcircled{2}}}. Each trajectory captures open-world objects, their positions, and depths relative to the camera. Finally, we use GPT-4 to generate the free-form instructions for pretraining, namely video-instruction data. Specifically, for \textbf{\textcolor{Bittersweet}{\textcircled{2}}}, which involves instant turning points, we specially treat <0> to <5> as walking trajectory, <A> and <B> as side-watching points and use them for navigation finetuning, namely action-instruction data.
+          Overview of our RoomTour3D data generation. We used multiple large models to annotate our data, resulting in a large number of trajectory-instruction pairs with geometric information.
         </h2>
         <div class="publication-videos-container">
           <div class="publication-video">
