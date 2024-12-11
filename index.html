@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="RoomTour3D: A Geometry-Aware Video-Instruction Dataset for Embodied Navigation">
+  <meta name="description" content="RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation">
   <meta name="keywords"
     content=Room tour videos, geometry aware, video instruction, vision-and-language navigation, embodied navigation, web videos, agent, VLM, LLM, Large Language Models, Multi-modal learning, Benchmark, Dataset, Instruction tuning, RoomTour3D">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -354,13 +354,13 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Vision-and-Language Navigation (VLN) field suffers from limited diversity intraining data, primarily constrained by artificially curated simulators. To address this, we introduce RoomTour3D, a video-instruction dataset derived from web-based room tour videos that capture real-world indoor spaces and human walking demonstrations.  
+              Vision-and-Language Navigation (VLN) suffers from the limited diversity and scale of training data, primarily constrained by the manual curation of existing simulators. To address this, we introduce RoomTour3D, a video-instruction dataset derived from web-based room tour videos that capture real-world indoor spaces and human walking demonstrations. 
             </p>
             <p>
-              Unlike existing VLN datasets that rely on manual curations and structured navigational cues, RoomTour3D leverages these videos to generate open-ended human walking trajectories and open-world navigable instructions. We developed an automatic pipeline that integrates reconstructed 3D scenes, depth, and open-vocabulary objects, enhancing geometry-aware and open-world capabilities.
+              Unlike existing VLN datasets, RoomTour3D leverages the scale and diversity of online videos to generate open-ended human walking trajectories and open-world navigable instructions. To compensate for the lack of navigation data in online videos, we perform 3D reconstruction and obtain 3D trajectories of walking paths augmented with additional information on the room types, object locations and 3D shape of surrounding scenes. 
             </p>
             <p>
-              The dataset includes ∼100K open-ended trajectories with ∼200K instructions, 2K geometric trajectories from 1847 room tour environments, and intermediate products like 3D scenes and object tags, all now available for release. Our experiments demonstrate RoomTour3D’s potential in training robust embodied navigation agents, enhancing performances across multiple VLN tasks like CVDN, SOON, R2R, and REVERIE, with improvements exceeding 6%, achieving an outstanding 9.8% boost on SOON and setting new state-of-the-art results. Moreover, RoomTour3D facilitates the development of trainable zero-shot VLN agent, showcasing the potential and challenges of advancing towards open-world navigation.
+              Our dataset includes ~100K open-ended description-enriched trajectories with ~200K instructions, and 17K action-enriched trajectories from 1847 room tour environments. We demonstrate experimentally that RoomTour3D enables significant improvements across multiple VLN tasks including CVDN, SOON, R2R, and REVERIE. Moreover, RoomTour3D facilitates the development of trainable zero-shot VLN agents, showcasing the potential and challenges of advancing towards open-world navigation.
             </p>
           </div>
         </div>
